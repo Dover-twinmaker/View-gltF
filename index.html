@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+            Three.js TypeScript Tutorials by Sean Bradley :
+            https://sbcode.net/threejs
+        </title>
+        <style>
+            body {
+                position: relative;
+                overflow: hidden;
+                margin: 0px;
+            }
+
+            #animationsPanel {
+                position: absolute;
+                top: 40px;
+                right: 10px;
+                width: 300px;
+                height: auto;
+                border: 1px solid white;
+                color: white;
+                font-family: monospace;
+                font-size: 17px;
+            }
+
+            #animationsPanel ul {
+                padding: 4px;
+                list-style-type: none;
+            }
+
+        
+
+            #dropzone {
+                
+                width: 10px;
+                height: 10px;
+                left: 10px;
+                top: 10px;
+                border: 10px dotted gray;
+                background-color: lightgray;
+                padding: 20px;
+                font-family: monospace;
+                font-size: 17px;
+            }
+
+            #dropzone p {
+                pointer-events: none;
+            }
+            #abc1 {
+                border: 2px solid gray ;
+                height: fit-content;
+                width: fit-content ;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #f1f1f1;
+                margin: 10px;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="abc1">
+            <p>
+                Drag and drop a glTF file here to load it.
+            </p>
+        </div>
+        <div>
+            
+                
+                    
+                    <form id="dropzone" enctype="multipart/form-data">
+                      
+                      
+                        
+                    </form>
+                    
+                
+            
+        
+        <div id="animationsPanel">
+            
+        </div>
+        <script type="module" src="bundle.js"></script>
+    </div>
+    </body>
+</html>
