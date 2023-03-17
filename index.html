@@ -7,11 +7,12 @@
            gltF Viewer
         </title>
         <style>
-            body {
-                position: relative;
-                overflow: hidden;
-                margin: 0px;
-            }
+           body {
+            background-image: url('https://tse4.mm.bing.net/th/id/OIP.9ZlAxZsYENiYx6ny84pDMwHaEK?pid=ImgDet&rs=1');
+  display:flex;
+  min-height:100vh;
+}
+body >div {margin:auto;}
 
             #animationsPanel {
                 position: absolute;
@@ -33,7 +34,8 @@
         
 
             #dropzone {
-                
+                align-items: center;
+                align-content: center;
                 width: 10px;
                 height: 10px;
                 left: 10px;
@@ -43,6 +45,10 @@
                 padding: 20px;
                 font-family: monospace;
                 font-size: 17px;
+                color: gray;
+                text-align: center;
+                cursor: pointer;
+                
             }
 
             #dropzone p {
@@ -56,21 +62,34 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                align-self: center;
+                align-content: center;
                 justify-content: center;
                 background-color: #f1f1f1;
                 margin: 10px;
 
             }
+            p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+  
+ 
+
+}
         </style>
     </head>
 
     <body>
+       
+
+
         <div id="abc1">
             <p>
                 Drag and drop a glTF file here to load it.
             </p>
-        </div>
-        <div>
+            <br>
+            <div>
             
                 
                     
@@ -86,7 +105,9 @@
         <div id="animationsPanel">
             
         </div>
+        <br>
         <script type="module" src="bundle.js"></script>
     </div>
+</div>
     </body>
 </html>
